@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tran Vo Tien Do | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="canvas-bg"></canvas>
+
+    <!-- 1. LEFT PANEL -->
+    <aside class="left-panel">
+        <div class="profile-container">
+            <div class="avatar-box">
+                <img src="avt.jpg" alt="Avatar" class="avatar">
+            </div>
+            <h2 class="name">Tran Vo Tien Do</h2>
+            <div class="role-badge">Software Engineer Student</div>
+
+            <div class="social-links">
+                <a href="https://github.com/tranvotiendo" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/tranvotiendo" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://facebook.com/Tranvotiendo" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+
+            <div class="contact-list">
+                <div class="c-item"><i class="fas fa-envelope"></i> tranvotiendo123@gmail.com</div>
+                <div class="c-item"><i class="fas fa-phone"></i> +84 9xx xxx xxx</div>
+            </div>
+
+            <!-- Nút Contact Me -->
+            <button id="btn-contact-me" class="btn-primary-glow">
+                Contact Me! <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </aside>
+
+    <!-- 2. MAIN CONTENT -->
+    <main class="main-content">
+        
+        <!-- Tab: ABOUT -->
+        <section id="about" class="tab-section active">
+            <h1 class="section-heading">About Me</h1>
+            <p class="intro-text">
+                
+                I specialize in software engineering with strong skills in building web and mobile applications. I focus on algorithmic thinking, SDLC, and modern frameworks to deliver scalable products.
+            </p>
+
+            <!-- 3. (Info Pills) -->
+            <div class="info-pills">
+                <div class="pill">
+                    <i class="fas fa-graduation-cap"></i> FPT University HCMC
+                </div>
+                <div class="pill">
+                    <i class="fas fa-code"></i> Software Engineer
+                </div>
+                <div class="pill">
+                    <i class="fas fa-map-marker-alt"></i> Ho Chi Minh City, VN
+                </div>
+            </div>
+
+            <h3 class="sub-heading">What I Do</h3>
+            <div class="grid-2">
+                <div class="card glass-card">
+                    <i class="fas fa-laptop-code icon-lg"></i>
+                    <h4>Web Development</h4>
+                    <p>Building responsive websites with ReactJS & Node.js.</p>
+                </div>
+                <div class="card glass-card">
+                    <i class="fas fa-database icon-lg"></i>
+                    <h4>Backend & DB</h4>
+                    <p>Designing database architecture with SQL Server & MongoDB.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab: SKILLS -->
+        <section id="skills" class="tab-section">
+            <h1 class="section-heading">My Skills</h1>
+            <!-- Mô tả cho Skills -->
+            <p class="intro-text">
+                I have experience working with various programming languages and tools. My tech stack is focused on building scalable backend systems and interactive frontends.
+            </p>
+
+            <div class="grid-2">
+                <div class="card glass-card">
+                    <i class="fab fa-java icon-lg"></i>
+                    <h4>Languages</h4>
+                    <p>Java, C, JavaScript, Python, SQL</p>
+                </div>
+                <div class="card glass-card">
+                    <i class="fab fa-react icon-lg"></i>
+                    <h4>Frontend</h4>
+                    <p>HTML/CSS, ReactJS, Bootstrap</p>
+                </div>
+                <div class="card glass-card">
+                    <i class="fas fa-server icon-lg"></i>
+                    <h4>Backend</h4>
+                    <p>Node.js, .NET Core, Spring Boot</p>
+                </div>
+                <div class="card glass-card">
+                    <i class="fas fa-tools icon-lg"></i>
+                    <h4>Tools</h4>
+                    <p>Git, Docker, VS Code, NetBeans</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab: PROJECTS -->
+        <section id="projects" class="tab-section">
+            <h1 class="section-heading">Featured Projects</h1>
+            <!-- Mô tả cho Projects -->
+            <p class="intro-text">
+                Here are some of the projects I've worked on. Each project represents a challenge I've solved and a new technology I've mastered.
+            </p>
+
+            <div class="grid-2">
+                <!-- Project 1 -->
+                <div class="card glass-card project-card">
+                    <h4>Library Management System</h4>
+                    <p>A console-based application built in C that provides essential features for managing a library. The system supports book management.</p>
+                    <div class="tags">
+                        <span>C Languages</span>
+                    </div>
+                    <!-- View Code & Demo Buttons -->
+                    <div class="project-actions">
+                        <a href="#" class="action-link"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="action-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <!-- <div class="card glass-card project-card">
+                    <h4>E-commerce App</h4>
+                    <p>Fullstack e-commerce platform with product catalog, shopping cart, and secure checkout.</p>
+                    <div class="tags">
+                        <span>ReactJS</span><span>Node.js</span><span>MongoDB</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="action-link"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="action-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div> -->
+                
+                <!-- Project 3 -->
+                <div class="card glass-card project-card">
+                    <h4>Portfolio Website</h4>
+                    <p>My personal digital resume featuring interactive particles and modern glassmorphism UI.</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span><span>JS</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="action-link"><i class="fab fa-github"></i> View Code</a>
+                        <!-- Nếu không có Demo thì bỏ dòng dưới -->
+                        <a href="#" class="action-link disabled"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab: CONTACT -->
+        <section id="contact" class="tab-section">
+            <h1 class="section-heading">Contact Me</h1>
+            <p class="intro-text">I'm always open to discussing product design work or partnership opportunities.</p>
+            <form class="glass-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="5" placeholder="Message"></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer Copyright -->
+        <footer class="main-footer">
+            <p>&copy; 2025 Tran Vo Tien Do. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- 3. RIGHT FLOATING NAV -->
+    <nav class="floating-nav">
+        <ul>
+            <li class="nav-btn active" data-target="about" title="Home">
+                <i class="fas fa-home"></i>
+            </li>
+            <li class="nav-btn" data-target="skills" title="Skills">
+                <i class="fas fa-shapes"></i>
+            </li>
+            <li class="nav-btn" data-target="projects" title="Projects">
+                <i class="fas fa-briefcase"></i>
+            </li>
+            <!-- Đặt ID để JS gọi tới -->
+            <li class="nav-btn" id="nav-contact-btn" data-target="contact" title="Contact">
+                <i class="fas fa-envelope"></i>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
