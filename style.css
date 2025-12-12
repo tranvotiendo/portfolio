@@ -160,3 +160,73 @@ body {
     .floating-nav ul { flex-direction: row; width: 100%; justify-content: space-around; gap: 0; }
     .nav-btn::before { display: none; }
 }
+
+/* --- CSS CHO DANH SÁCH CHỨNG CHỈ (Cập nhật) --- */
+
+.cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Khoảng cách giữa các thẻ chứng chỉ */
+}
+
+.cert-item {
+    display: flex;
+    flex-direction: column; /* Xếp dọc từ trên xuống */
+    align-items: flex-start; /* Căn tất cả sang lề trái */
+    justify-content: center;
+    padding: 25px 30px;
+    border-radius: 20px;
+    background: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.cert-item:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    background: rgba(30, 41, 59, 0.8);
+}
+
+.cert-info {
+    width: 100%;
+    margin-bottom: 15px; /* Tạo khoảng cách giữa phần thông tin và nút bên dưới */
+}
+
+.cert-info h4 {
+    font-size: 1.25rem;
+    margin-bottom: 8px; /* Khoảng cách giữa Tên chứng chỉ và Nơi cấp */
+    color: #fff;
+    font-weight: 700;
+}
+
+.cert-info .issuer {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    background: rgba(255,255,255,0.1); /* Thêm nền nhẹ cho nơi cấp nhìn rõ hơn */
+    padding: 4px 12px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* Nút xem chứng chỉ */
+.btn-cert {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 30px; /* Bo tròn nhiều hơn cho nút */
+    border: 1px solid var(--primary); /* Viền mỏng màu xanh */
+    background: transparent;
+    transition: 0.3s;
+    margin-top: 5px; /* Đẩy xuống một chút như bạn yêu cầu */
+}
+
+.btn-cert:hover {
+    background: var(--primary);
+    color: #0f172a;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
